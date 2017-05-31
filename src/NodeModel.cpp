@@ -18,6 +18,8 @@ std::shared_ptr<NodeData> NodeModel::outData(PortIndex port) {
 
 SimpleNodeModel::SimpleNodeModel() {}
 
-QString SimpleNodeModel::caption() const { return ""; }
+QString SimpleNodeModel::caption() const { return QStringLiteral(""); }
 
 bool SimpleNodeModel::captionVisible() const { return false; }
+
+QString AnonymousNodeModel::name() const { return QStringLiteral(""); }
