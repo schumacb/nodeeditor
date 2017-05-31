@@ -33,15 +33,4 @@ public:
   /// caption is invisible by default
   bool captionVisible() const;
 };
-
-/// Nodes, that don't need a name
-class NODE_EDITOR_PUBLIC AnonymousNodeModel : public SimpleNodeModel {
-  Q_OBJECT
-public:
-  AnonymousNodeModel();
-  virtual ~AnonymousNodeModel() = default;
-
-  /// returns an empty string as name
-  QString name() const;
-};
 }

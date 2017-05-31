@@ -21,7 +21,3 @@ SimpleNodeModel::SimpleNodeModel() {}
 QString SimpleNodeModel::caption() const { return QStringLiteral(""); }
 
 bool SimpleNodeModel::captionVisible() const { return false; }
-
-AnonymousNodeModel::AnonymousNodeModel(){}
-
-QString AnonymousNodeModel::name() const { return QStringLiteral(""); }
